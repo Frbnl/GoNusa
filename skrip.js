@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
 
 header.addEventListener('mouseenter', () => {
   logo.src = "Medias/GoNusa_logo.png";
-
+  setTextColor('--textrev');
 });
 
 header.addEventListener('mouseleave', () => {
@@ -32,7 +32,7 @@ header.addEventListener('mouseleave', () => {
     logo.src = "Medias/GoNusa_logo_white.png";
   } else {
     logo.src = "Medias/GoNusa_logo.png";
-    setTextColor('--mute');
+    setTextColor('--textrev');
   }
 });
 

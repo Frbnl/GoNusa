@@ -1,0 +1,200 @@
+.wil-hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.gambar-wil{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(60%);
+}
+
+.wil-overlay {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  top: 20%;
+}
+
+.wil-overlay h1 {
+  font-family: 'playfair';
+  font-size: 6rem;
+  margin-bottom: 10px;
+}
+
+.wil-overlay p {
+  font-family: 'manrope';
+  font-size: 1.2rem;
+  color: #eee;
+}
+.wil-utama{
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+.opening{
+  text-align: left;
+  font-weight: bold;
+  font-size: 3.5em;
+  margin-left: 100px;
+  color: var(--text-blue);
+}
+.sub-open{
+  margin-left: 100px;
+  color: var(--text2);
+  font-family: manrope;
+}
+.jawa-map{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -50px;
+  margin-right: 00px;
+  background: transparent;
+  
+}
+.map-container{
+  display: flex;
+  margin-top: -160px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.svg-map{
+  margin-right: -900px;
+  background: transparent;
+  transform: scale(0.6);
+  margin-top: -200px;
+}
+.svg-map path {
+  fill: #d3d3d3;
+  stroke: #84848486;
+  stroke-width: 1;
+  transition: fill 0.2s ease;
+  cursor: pointer;
+
+}
+
+.svg-map .leaflet-interactive:hover {
+  fill: #8f8f8f; 
+}
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 40px;
+  align-items: center;
+  padding: 10px 100px;
+  margin-top: -300px;
+  background: var(--pure-neutral);
+}
+
+.pulau-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 700px;
+  grid-auto-rows: 180px;
+  gap: 10px;
+}
+
+.pulau-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.pulau-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.pulau-text {
+  color: #222;
+  font-family: Manrope;
+}
+
+.pulau-text h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: playfair;
+  color: var(--text2);
+}
+
+.pulau-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--mute);
+}
+.mustsee-java {
+  margin: 100px auto;
+  padding: 0 60px;
+}
+
+.mustsee-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  color: var(--text2);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mustsee-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.mustsee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.spot {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.spot:hover {
+  transform: scale(1.02);
+}
+
+.spot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: filter 0.3s ease;
+}
+
+.spot:hover img {
+  filter: brightness(65%);
+}
+
+.spot h3 {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+.spot.big {
+  grid-row: span 2;
+}
+
+.spot.wide {
+  grid-column: span 2;
+}
+
+/*pointer-events="none" class="svg-java" width="715" height="240" viewBox="60 130 715 240" ><g><path class="leaflet-interactive" stroke="#A9C1DE" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#CEE4FF" fill-opacity="0.9" fill-rule="evenodd"*/

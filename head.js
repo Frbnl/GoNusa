@@ -57,7 +57,7 @@ if (spotPrev) {
 setInterval(() => {
   spotIndex = (spotIndex + 1) % spotMax;
   showSpotlightSlide(spotIndex);
-}, 5000);
+}, 6000);
 
 showSpotlightSlide(0);
   

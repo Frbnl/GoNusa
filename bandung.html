@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bandung - GoNusa</title>
   <link rel="stylesheet" href="styles/style-base.css">
+  <link rel="stylesheet" href="styles/jawa.css">
+  <link rel="stylesheet" href="styles/kota.css"
+  <script src="skrip.js" defer></script>
+  <script src="head.js" defer></script>
 </head>
 <body>
   <header class="header navbar">
     <div class="brand">
-      <a href="index.html"><img class="logo" src="Medias/GoNusa_logo.png" alt="GoNusa logo"></a>
+      <a href="index.html"><img id="logo" class="logo" src="Medias/GoNusa_logo.png" alt="GoNusa logo"></a>
     </div>
     <nav>
         <ul>
@@ -27,20 +31,24 @@
   </header>
 
   <!-- === HERO === -->
-  <section class="bandung-hero">
-    <video autoplay muted loop class="bandung-video">
-      <source src="Medias/bandung_2.mp4" type="video/mp4">
+  <section class="kota-hero">
+    <img src="Medias/Bandung.webp" class="kota-hero-media">
     </video>
-    <div class="bandung-overlay">
+    <div class="kota-hero-overlay"></div>
+    <div class="kota-hero-text">
       <h1>Bandung</h1>
-      <p>Kota Kembang yang sekarang mah panas.</p>
+      <p>Kota Kembang</p>
     </div>
   </section>
 
   <!-- === YAPPINGAN === -->
   <section class="bandung-content">
-    <h2>Tentang Bandung</h2>
+    <div><h2>Tentang Bandung</h2>
     <p>Terletak di dataran tinggi Jawa Barat, Bandung dikenal dengan udara sejuk, kafe, dan arsitektur kolonial. Kota ini juga menjadi pusat mode, pendidikan, dan inovasi kreatif. Bandung sering disebut “Paris van Java” karena pesonanya.</p>
+    <h1 class="kanan title">"Dan Bandung Bagiku Bukan Cuma"</h1>
+    <p class="kanan">Terletak di dataran tinggi Jawa Barat, Bandung dikenal dengan udara sejuk, kafe, dan arsitektur kolonial. Kota ini juga menjadi pusat mode, pendidikan, dan inovasi kreatif. Bandung sering disebut “Paris van Java” karena pesonanya.</p>
+  </div>
+    <img src="Medias/pasupati.jpg">
   </section>
 
   <!-- === HIGHLIGHTS === -->
@@ -80,8 +88,7 @@
 
   <!-- === FOOTER === -->
   <footer class="footer">
-    <p>&copy; 2025 GoNusa | Eksplor Keindahan Nusantara</p>
+    <p>&copy; 2025 GoNusa — Discover Indonesia.</p>
   </footer>
 </body>
 </html>
-
