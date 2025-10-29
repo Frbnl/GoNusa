@@ -90,6 +90,7 @@
     margin-left: 15px;
     color: var(--textrev);
     text-shadow: 0 0 10px rgba(0, 0, 0, 2);
+    font-family: manrope;
 }
 .overlay{
     position: absolute;
@@ -118,6 +119,9 @@
   font-size: 2rem;
   margin-bottom: 15px;
   color: var(--text-blue);
+}
+.culture-text p{
+font-family: manrope;
 }
 .culture-img {
   flex: 1;
@@ -217,4 +221,5 @@
 .event-info {
   padding: 15px;
 }
+
 
