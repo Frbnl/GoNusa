@@ -6,17 +6,17 @@
   <title>Bandung - GoNusa</title>
   <link rel="stylesheet" href="styles/style-base.css">
   <link rel="stylesheet" href="styles/jawa.css">
-  <link rel="stylesheet" href="styles/kota.css"
+  <link rel="stylesheet" href="styles/kota.css">
+  <link rel="stylesheet" href="styles/Bandung.css"> 
   <script src="skrip.js" defer></script>
   <script src="head.js" defer></script>
 </head>
 <body>
-  <header class="header navbar" id="header">
+  <header class="header navbar">
     <div class="brand">
-       <a href="index.html"><img class="logo" id="logo" src="Medias/GoNusa_logo_white.png" alt="logo sman3"></a>
+      <a href="index.html"><img id="logo" class="logo" src="Medias/GoNusa_logo.png" alt="GoNusa logo"></a>
     </div>
-        
-        <nav>
+    <nav>
         <ul>
             <li><a href="index.html" class="aktif" >Destinasi</a>
             </li>
@@ -29,8 +29,7 @@
             <li><a href="kontak.html" class="kontak">Kontak</a></li>
         </ul>
     </nav>
-
-    </header>
+  </header>
 
   <!-- === HERO === -->
   <section class="kota-hero">
@@ -46,9 +45,11 @@
   <!-- === YAPPINGAN === -->
   <section class="bandung-content">
     <div><h2>Tentang Bandung</h2>
-    <p>Terletak di dataran tinggi Jawa Barat, Bandung dikenal dengan udara sejuk, kafe, dan arsitektur kolonial. Kota ini juga menjadi pusat mode, pendidikan, dan inovasi kreatif. Bandung sering disebut “Paris van Java” karena pesonanya.</p>
-    <h1 class="kanan title">"Dan Bandung Bagiku Bukan Cuma"</h1>
-    <p class="kanan">Terletak di dataran tinggi Jawa Barat, Bandung dikenal dengan udara sejuk, kafe, dan arsitektur kolonial. Kota ini juga menjadi pusat mode, pendidikan, dan inovasi kreatif. Bandung sering disebut “Paris van Java” karena pesonanya.</p>
+    <p>Bandung dikenal sebagai kota yang memadukan keindahan alam pegunungan dengan nuansa urban yang kreatif dan modern. Terletak di dataran tinggi Jawa Barat, kota ini dikelilingi oleh perbukitan hijau dan udara yang sejuk, menjadikannya destinasi favorit untuk beristirahat dari hiruk-pikuk kota besar.</p>
+    <h1>"Paris van Java"</h1>
+    <p class="kanan">Sejak masa kolonial, Bandung sudah dikenal sebagai “Paris van Java”, julukan yang melekat karena gaya arsitektur Eropa dan suasananya yang elegan. Kini, Bandung berkembang menjadi kota penuh inovasi — pusat mode, kuliner, dan desain yang menjadi inspirasi bagi banyak generasi muda.
+
+    Di sisi lain, Bandung juga kaya akan sejarah dan budaya. Gedung Sate, Jalan Braga, hingga kawasan Dago masih memancarkan pesona klasik masa lalu, sementara daerah seperti Lembang, Ciwidey, dan Dago Pakar menawarkan keindahan alam yang memukau. Dari secangkir kopi di kafe kecil hingga panorama kebun teh yang luas, Bandung selalu menghadirkan keseimbangan antara kreativitas dan ketenangan yang sulit ditemukan di tempat lain.</p>
   </div>
     <img src="Medias/pasupati.jpg">
   </section>
@@ -76,23 +77,78 @@
   </section>
 
   <!-- === GALLERI === -->
-  <section class="bandung-gallery">
-    <h2>Galeri Bandung</h2>
-    <div class="gallery-grid">
-      <img src="Medias/Perkebunan_Teh_Rancabali.webp" alt="Perkebunan Teh">
-      <img src="Medias/Lokasi dan Rute Tahura Dago Bandung.jpg" alt="Dago Pakar">
-      <img src="Medias/Gunung-Tangkuban-Perahu.jpg" alt="Gunung Tangkuban Parahu">
-      <img src="Medias/floating market.webp" alt="Floating Market">
-      <img src="Medias/asia.jpg" alt="Jalan Asia Afrika">
-      <img src="Medias/alunalun.jpeg" alt="Alun-Alun Bandung">
-    </div>
-  </section>
+  <h1 class="title-galeri">Galeri Kota</h1>
+  <div class="slideshow-container">
 
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Medias/alunalun.jpeg">
+    <div class="text-galeri">Alun Alun Bandung</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Medias/asia.jpg">
+    <div class="text-galeri">Asia Afrika</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Medias/Bandung.webp">
+    <div class="text-galeri">Gedung Sate</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="Medias/Gunung-Tangkuban-Perahu.jpg">
+    <div class="text-galeri">Tangkuban Parahu</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div class="dots">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
   <!-- === FOOTER === -->
   <footer class="footer">
     <p>&copy; 2025 GoNusa — Discover Indonesia.</p>
   </footer>
 </body>
 </html>
-
-

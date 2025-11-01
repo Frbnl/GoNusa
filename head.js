@@ -2,7 +2,6 @@ const videos = document.querySelectorAll('.bg-video');
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
 const slides = document.querySelectorAll('.video-slide');
-const titles = ['Video 1', 'Video 2', 'Video 3', 'lok4', 'lok5'];
 let current = 0;
 
 function showSlide(index) {
@@ -60,4 +59,5 @@ setInterval(() => {
 }, 6000);
 
 showSpotlightSlide(0);
+
   

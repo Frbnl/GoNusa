@@ -1,124 +1,121 @@
+/* === HERO SECTION === */
 .kota-hero {
   position: relative;
-  height: 80vh;
+  height: 85vh;
   overflow: hidden;
   text-align: center;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 .kota-hero-media {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 1;
+  filter: brightness(90%);
 }
 .kota-hero-overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 60%);
+  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent 65%);
 }
 .kota-hero-text {
   position: relative;
   z-index: 2;
-  color: var(--textrev);
-  text-shadow: 0 0 18px rgba(208, 208, 208, 0.5);
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0,0,0,0.6);
   text-align: center;
-  bottom: 350px;
+  bottom: 340px;
 }
 .kota-hero-text h1 {
-  font-size: 4.2rem;
-  margin-bottom: 10px;
+  font-size: 4.5rem;
+  font-family: 'Playfair', serif;
+  color: #f8eac9;
+  letter-spacing: 2px;
 }
-.page-title{
+.kota-hero-text p {
+  font-size: 1.2rem;
+  color: #d4e1f4;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* === PAGE TITLE === */
+.page-title {
   text-align: center;
   margin-top: 21vh;
-  line-height: 0.05;
+  line-height: 0.1;
 }
-.page-title h3{
-  font-family: manrope;
-  color: var(--text-blue);
+.page-title h3 {
+  font-family: 'Manrope', sans-serif;
+  color: #1d2c44;
 }
-.title-bali{
+.title-bali {
   font-size: 4.5em;
-  color: gold;
+  color: #d9b878;
   text-align: center;
+  position: relative;
 }
+.title-bali::before, .title-bali::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 22%;
+  background: #1d2c44;
+  border-radius: 2px;
+  top: 200%;
+}
+.title-bali::before {
+  left: 10%;
+}
+.title-bali::after {
+  right: 10%;
+}
+
+/* === INTRO SECTION === */
 .kota-intro {
   padding: 100px 50px;
-  background: #fff;
-  text-align: left;
+  background: #f6f7fb;
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr 1fr;
 }
-.kota-intro h2 {
-  font-family: Playfair;
-  text-shadow: 0 0 20px rgba(217, 224, 7, 0.3);
-  font-size: 4rem;
-  margin-bottom: 15px;
-  color: gold;
-}
-.title-bali::before{
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: 29%;
-  left: 280px;
-  background: rgb(1, 5, 107);
-  border-radius: 2px;
-  transform: translate(-50%, 10px);
-}
-.title-bali::after{
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: 29%;
-  right: -140px;
-  background: rgb(1, 5, 107);
-  border-radius: 2px;
-  transform: translate(-50%, 10px);
-}
 .kota-intro p {
-  text-align: left;
-  font-family: manrope;
-  color: var(--text);
-  line-height: 1.7;
+  font-family: 'Manrope', sans-serif;
+  color: #2b2b2b;
+  line-height: 1.8;
   max-width: 800px;
   margin-top: 90px;
 }
 .kota-intro .sumber {
-  color: var(--mute);
-  font-family: manrope;
-  text-decoration: none;
+  color: #7a7a7a;
 }
 .kota-intro .sumber a {
-  color: var(--mute);
-  font-family: manrope;
+  color: #7a7a7a;
   text-decoration: none;
 }
-.kota-intro img{
-  width: 700px;
+.kota-intro img {
+  width: 600px;
+  margin-top: 95px;
   border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
+
+/* === MUST VISIT PLACES === */
 .kota-places {
   padding: 80px 120px;
-  background: #f8f8f8;
+  background: #eef3f8;
 }
 .kota-places h2 {
   text-align: center;
-  font-family: Playfair;
+  font-family: 'Playfair', serif;
   font-size: 3rem;
-  color: var(--text-blue);
+  color: #1d2c44;
   margin-bottom: 50px;
 }
-
-/*Must Visit*/
 .mustsee-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
-
 .spot {
   position: relative;
   overflow: hidden;
@@ -126,11 +123,9 @@
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
-
 .spot:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
-
 .spot img {
   width: 100%;
   height: 100%;
@@ -138,76 +133,49 @@
   filter: brightness(80%);
   transition: filter 0.3s ease;
 }
-
 .spot:hover img {
   filter: brightness(65%);
 }
-
-.spot h3 {
-  position: relative;
-  bottom: 12px;
+.spot h3, .spot h2 {
+  position: absolute;
   left: 16px;
   color: #fff;
-  font-size: 1.3rem;
-  font-weight: 700;
-  font-family: 'Manrope', sans-serif;
+  z-index: 5;
   text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
-.spot.big {
-  grid-row: span 2;
+.spot h3 {
+  bottom: 70px;
+  font-size: 2.4em;
+  font-family: 'Playfair', serif;
 }
-
+.spot h2 {
+  bottom: 15px;
+  font-size: 1.4em;
+  font-family: 'Manrope', sans-serif;
+}
+.spot p {
+  z-index: 5;
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
+  font-size: 0.95rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
 .spot.wide {
   grid-column: span 2;
+  max-height: 430px;
 }
-.place-section{
-  display: flex;
-  justify-content: space-evenly;
-}
-.reco-card{
-  position: relative;
-  border-radius: 16px;
-  width: 550px;
-}
-.spot h2{
-  position: absolute;
-  bottom: 65px;
-  left: 15px;
-  z-index: 5;
-  color: var(--textrev);
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
-}
-.spot h3{
-  position: absolute;
-  bottom: 180px;
-  left: 15px;
-  z-index: 5;
-  font-family: playfair;
-  font-size: 2.5em;
-  color: var(--textrev);
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
-}
-.spot p{
-  z-index: 5;
-  position: absolute;
-  bottom: 1px;
-
-  margin-left: 15px;
-  color: var(--textrev);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 2);
-}
-.overlay{
+.overlay {
   position: absolute;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  top: -2px; left: 0;
+  top: 0; left: 0;
   width: 100%; height: 100%;
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 60%);
 }
-.reco-card img{
-  width: 100%;
-  border-radius: 12px;
-}
+
+/* === CULTURE / EXPERIENCE SECTION === */
 .kota-culture {
   display: flex;
   align-items: center;
@@ -215,19 +183,19 @@
   padding: 80px 120px;
   background: #fff;
 }
-.culture-p{
-  font-family: manrope;
-  
-}
 .culture-text {
   flex: 1;
 }
 .culture-text h2 {
-  font-family: Playfair;
-  font-size: 4.6em;
-  margin-bottom: 50px;
-  
-  color: var(--text-blue);
+  font-family: 'Playfair', serif;
+  font-size: 4rem;
+  margin-bottom: 40px;
+  color: #3e4b60;
+}
+.culture-text p {
+  color: #2b2b2b;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.8;
 }
 .culture-img {
   flex: 1;
@@ -238,65 +206,61 @@
   height: 500px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-.transport-section {
-  padding: 80px 10%;
-  background: #fafafa;
-  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
+/* === TRANSPORT SECTION === */
+.transport-section {
+  padding: 80px 10%;
+  background: #f5f6f9;
+  text-align: center;
+}
 .transport-section .section-title {
   font-size: 3rem;
   margin-bottom: 10px;
   font-family: 'Playfair', serif;
+  color: #1d2c44;
 }
-
 .transport-section .section-subtitle {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1.1rem;
+  color: #5a6274;
   margin-bottom: 40px;
+  font-family: 'Manrope', sans-serif;
 }
-
 .transport-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 30px;
   justify-items: center;
 }
-
 .transport-card {
-  background: white;
+  background: #fff;
   min-width: 400px;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .transport-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
-
 .transport-card img {
   width: 100%;
   height: 220px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  margin: 0 0;
   margin-bottom: 15px;
 }
-
 .transport-card h3 {
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: var(--text);
+  color: #1d2c44;
+  font-family: 'Manrope', sans-serif;
 }
-
 .transport-card p {
   font-size: 0.95rem;
-  font-family: manrope;
-  color: var(--mute3);
+  font-family: 'Manrope', sans-serif;
+  color: #4a4f59;
   line-height: 1.6;
   padding: 15px;
 }
