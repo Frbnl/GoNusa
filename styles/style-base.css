@@ -72,8 +72,7 @@ header h1 {
 
 nav {
   background: var(--transparent);
-  margin-left: auto;
-  margin-right: 500px;
+  text-align: center;
   gap: 50px;
   color: black;
 }
@@ -360,11 +359,7 @@ main .welcome h1::after{
 .svg-map path:hover {
   fill: #8f8f8f; 
 }
-.pulau-container{
-  left: 90px;
-  position: absolute;
-  bottom: -10px;
-}
+
 .pulau{
   color: var(--mute3);
   position: absolute;
