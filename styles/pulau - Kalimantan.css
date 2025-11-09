@@ -64,13 +64,13 @@
   align-items: center;
   background: transparent;
 }
-.svg-java{
+.svg-map{
   margin-right: -900px;
   background: transparent;
-  max-width: 300px;
-  transform: scale(5);
+  transform: scale(1.4);
+  margin-top: -260px;
 }
-.svg-java path {
+.svg-map path {
   fill: #d3d3d3;
   stroke: #84848486;
   stroke-width: 1;
@@ -79,15 +79,16 @@
 
 }
 
-.svg-java .leaflet-interactive:hover {
+.svg-map .leaflet-interactive:hover {
   fill: #8f8f8f; 
 }
-.info-jawa {
+.info {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   gap: 40px;
   align-items: center;
-  padding: 80px 100px;
+  padding: 10px 100px;
+  margin-top: -300px;
   background: var(--pure-neutral);
 }
 
@@ -195,3 +196,5 @@
 .spot.wide {
   grid-column: span 2;
 }
+
+/*pointer-events="none" class="svg-java" width="715" height="240" viewBox="60 130 715 240" ><g><path class="leaflet-interactive" stroke="#A9C1DE" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#CEE4FF" fill-opacity="0.9" fill-rule="evenodd"*/

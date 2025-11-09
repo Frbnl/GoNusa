@@ -16,16 +16,17 @@
   --text-blue: rgb(7, 28, 83);
   --text2: rgb(33, 37, 41);
   --bg-white: rgb(242, 241, 241);
+  --bg-Dblue: rgb(13, 0, 61);
   --pure-neutral: #ffffff;
   --semi-transparent: rgba(177, 177, 177, 0.438);
-  --border-soft: rgb(210, 209, 209); 
+  --border-soft: rgba(206, 206, 206, 0.7); 
   --transparent: rgba(0,0,0,0);
   --mute3: #767676;
   --mute: #949494;
   --mute2: #d9d9d9;
 }
 body{
-  font-family: 'playfair';
+  font-family: playfair;
   color: black;
   font-size: 16px;
   margin: 0;
@@ -96,7 +97,7 @@ nav ul li a {
   color: var(--textrev);
   font-size: 16px;
   padding: 8px 12px;
-  font-family: 'manrope';
+  font-family: manrope;
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
@@ -105,7 +106,7 @@ nav ul li a {
   transition: 0.3s
 }
 nav ul li a:hover {
-  background: rgba(43, 108, 176, 0.9);
+  background: rgba(2, 81, 145, 0.401);
   border-radius: 15px;   
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
   color: rgb(0, 0, 0);
@@ -144,23 +145,25 @@ nav ul li a.aktip {
   font-weight: bold;
 }
 .navbar.scrolled  {
-  background-color: var(--semi-transparent);
+  background-color: rgba(184, 207, 234, 0.466);
   backdrop-filter: blur(4px);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   border-bottom: solid 1px var(--border-soft);
   transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: manrope;
 }
 
 .navbar:hover{
-  background-color: var(--semi-transparent);
+  background-color: rgba(184, 207, 234, 0.466);
   backdrop-filter: blur(4px);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   border-bottom: solid 1px var(--border-soft);
   transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: manrope;
   color: black;
 }
+
+/* === VIDEO HEADER === */
 .video-header {
   height: 100vh;
   overflow: hidden;
@@ -246,7 +249,7 @@ nav ul li a.aktip {
 }
 .video-title{
     color: white;
-    font-family: 'playfair'
+    font-family: playfair;
 }
 .video-slide {
     position: absolute;
@@ -263,7 +266,7 @@ nav ul li a.aktip {
   position: absolute;
   top: 40%;
   left: 4%;
-  font-family: 'proximanova';
+  font-family: proximanova;
   color: rgb(255, 255, 255);
   font-size: 50px;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
@@ -356,6 +359,11 @@ main .welcome h1::after{
 
 .svg-map path:hover {
   fill: #8f8f8f; 
+}
+.pulau-container{
+  left: 90px;
+  position: absolute;
+  bottom: -10px;
 }
 .pulau{
   color: var(--mute3);
@@ -558,7 +566,7 @@ main .welcome h1::after{
 .mustsee-title {
   padding: 0;
   margin-top: -20px;
-  font-family: 'Playfair Display', serif;
+  font-family: Playfair Display;
   font-size: 4em;
   font: 400;
   color: var(--text-blue);
@@ -575,7 +583,7 @@ main .welcome h1::after{
 }
 
 .mustsee-grid {
-  margin: 100px 50px;
+  margin: 50px 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -612,7 +620,7 @@ main .welcome h1::after{
   color: #fff;
   font-size: 1.3rem;
   font-weight: 700;
-  font-family: 'Manrope', sans-serif;
+  font-family: Manrope;
   text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 .spot.big {
@@ -625,4 +633,7 @@ main .welcome h1::after{
 footer{
   text-align: center;
   font-family: manrope;
+  padding: 20px 20px;
+  color: var(--textrev);
+  background: var(--bg-Dblue);
 }

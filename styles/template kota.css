@@ -78,16 +78,16 @@ body {
   content: "";
   position: absolute;
   height: 3px;
-  width: 16%;
+  width: 22%;
   background: #1d2c44;
   border-radius: 2px;
   top: 100%;
 }
 .judul-destinasi::before {
-  left: 8%;
+  left: 10%;
 }
 .judul-destinasi::after {
-  right: 8%;
+  right: 10%;
 }
 /* ========== INTRO SECTION ========== */
 .bagian-intro {
@@ -195,7 +195,7 @@ body {
 }
 .kartu-destinasi.lebar { 
   grid-column: span 2; 
-  max-height: 350px;
+  max-height: 370px;
 }
 
 /* ========== BUDAYA ========== */
@@ -293,7 +293,7 @@ body {
 } 
 .item img {
   width: 500px;
-  height: 700px;
+  height: 650px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);

@@ -1,0 +1,568 @@
+.wil-hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.gambar-wil{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(60%);
+}
+
+.wil-overlay {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  top: 20%;
+}
+
+.wil-overlay h1 {
+  font-family: 'playfair';
+  font-size: 6rem;
+  margin-bottom: 10px;
+}
+
+.wil-overlay p {
+  font-family: 'manrope';
+  font-size: 1.2rem;
+  color: #eee;
+}
+.wil-utama{
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+.opening{
+  text-align: left;
+  font-weight: bold;
+  font-size: 3.5em;
+  margin-left: 100px;
+  color: var(--text-blue);
+}
+.sub-open{
+  margin-left: 100px;
+  color: var(--text2);
+  font-family: manrope;
+}
+.jawa-map{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -50px;
+  margin-right: 00px;
+  background: transparent;
+  
+}
+.map-container{
+  display: flex;
+  margin-top: -160px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.svg-java{
+  margin-right: -900px;
+  background: transparent;
+  max-width: 300px;
+  transform: scale(5);
+}
+.svg-java path {
+  fill: #d3d3d3;
+  stroke: #84848486;
+  stroke-width: 1;
+  transition: fill 0.2s ease;
+  cursor: pointer;
+
+}
+
+.svg-java .leaflet-interactive:hover {
+  fill: #8f8f8f; 
+}
+.info-jawa {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 40px;
+  align-items: center;
+  padding: 80px 100px;
+  background: var(--pure-neutral);
+}
+
+.pulau-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 700px;
+  grid-auto-rows: 180px;
+  gap: 10px;
+}
+
+.pulau-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.pulau-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.pulau-text {
+  color: #222;
+  font-family: Manrope;
+}
+
+.pulau-text h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: playfair;
+  color: var(--text2);
+}
+
+.pulau-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--mute);
+}
+.mustsee-java {
+  margin: 100px auto;
+  padding: 0 60px;
+}
+
+.mustsee-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  color: var(--text2);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mustsee-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.mustsee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.spot {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.spot:hover {
+  transform: scale(1.02);
+}
+
+.spot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: filter 0.3s ease;
+}
+
+.spot:hover img {
+  filter: brightness(65%);
+}
+
+.spot h3 {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+.spot.big {
+  grid-row: span 2;
+}
+
+.spot.wide {
+  grid-column: span 2;
+}
+
+
+/* === Modern Enhancements === */
+
+/* Parallax hero */
+.wil-hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+.gambar-wil {
+  animation: heroZoom 15s ease-in-out infinite alternate;
+  transform: scale(1.05);
+}
+@keyframes heroZoom {
+  from { transform: scale(1.05); }
+  to { transform: scale(1.15); }
+}
+.wil-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.6));
+  z-index: 1;
+}
+
+/* Scroll-down indicator */
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.7;
+  animation: bounce 1.8s infinite;
+  z-index: 3;
+}
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 10px); }
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Map glow hover */
+.svg-java path:hover {
+  fill: #00aaff;
+  filter: drop-shadow(0 0 8px rgba(0,170,255,0.7));
+}
+
+/* Gallery glass effect */
+.pulau-gallery img {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  backdrop-filter: blur(3px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.pulau-gallery img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+
+/* === Content-focused section: Itinerary & Facts === */
+.content-section {
+  padding: 60px 80px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  margin-top: 40px;
+  border-radius: 14px;
+}
+
+.content-section .section-head h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin: 0 0 8px 0;
+  color: var(--text2, #123);
+}
+
+.content-section .section-head .lead {
+  color: var(--mute, #9aa3ad);
+  margin-bottom: 20px;
+}
+
+.itinerary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.itinerary-card {
+  background: rgba(255,255,255,0.02);
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.45);
+}
+
+.itinerary-card h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: var(--text2, #122);
+}
+
+.itinerary-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--mute, #bfc9d3);
+  font-size: 0.95rem;
+}
+
+.itinerary-card .tip {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #f6f7f9;
+  background: rgba(255,255,255,0.02);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.quick-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.card {
+  flex: 1;
+  padding: 18px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+}
+
+.quick-facts ul, .local-tips ol {
+  margin: 8px 0 0 18px;
+  color: #dde7ee;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .itinerary-grid { grid-template-columns: 1fr; }
+  .quick-row { flex-direction: column; }
+  .content-section { padding: 30px; }
+}
+
+
+/* === Discover Java’s Essence === */
+.java-essence {
+  margin: 100px auto;
+  padding: 80px 60px;
+  text-align: center;
+  color: #f4f4f4;
+  background: radial-gradient(ellipse at top, rgba(0,0,0,0.5), rgba(0,0,0,0.85));
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+}
+
+.essence-head h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00aaff, #66ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.essence-head p {
+  font-family: 'Manrope', sans-serif;
+  color: #ccc;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.essence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.essence-card {
+  position: relative;
+  height: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.essence-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.8) 100%);
+  z-index: 1;
+}
+
+.essence-overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  padding: 30px;
+  text-align: left;
+}
+
+.essence-overlay h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.essence-overlay p {
+  font-family: 'Manrope', sans-serif;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.essence-card.culture {
+  background-image: url('https://images.unsplash.com/photo-1597088753882-047f8b19b1f2?q=80&w=1600&auto=format&fit=crop');
+}
+
+.essence-card.nature {
+  background-image: url('https://images.unsplash.com/photo-1526481280691-7bdb3c7b5b89?q=80&w=1600&auto=format&fit=crop');
+}
+
+.essence-card.cuisine {
+  background-image: url('https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=1600&auto=format&fit=crop');
+}
+
+@media (max-width: 768px) {
+  .java-essence {
+    padding: 60px 20px;
+  }
+  .essence-head h2 {
+    font-size: 2.2rem;
+  }
+  .essence-overlay h3 {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* === Traveler's Journal (editorial cards) === */
+.travel-journal {
+  margin: 80px 40px;
+  padding: 40px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  border-radius: 14px;
+  color: #eaf3f8;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+}
+
+.travel-journal .journal-head {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 28px;
+}
+
+.travel-journal h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  margin: 0 0 8px;
+  color: #f8fbff;
+}
+
+.travel-journal .journal-lead {
+  color: #cbdbe6;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.entry-card {
+  background: rgba(255,255,255,0.02);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  box-shadow: 0 8px 20px rgba(2,6,23,0.45);
+}
+
+.entry-media {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(0.95) contrast(0.95);
+}
+
+.entry-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.entry-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  margin: 0;
+  color: #fff;
+}
+
+.entry-excerpt {
+  color: #dbeaf6;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+  flex: 1;
+}
+
+.entry-meta {
+  font-size: 0.85rem;
+  color: #9fb6c9;
+}
+
+.read-more {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #66ccff;
+  text-decoration: none;
+  align-self: flex-start;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
+  transition: background 0.2s ease;
+}
+
+.read-more:hover { background: rgba(255,255,255,0.04); text-decoration: underline; }
+
+/* editorial feel: lifted center card */
+.journal-grid .entry-card:nth-child(2) {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.5);
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  .journal-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .journal-grid { grid-template-columns: 1fr; }
+  .entry-media { height: 220px; }
+  .travel-journal { margin: 40px 18px; padding: 28px; }
+}

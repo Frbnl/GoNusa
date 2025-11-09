@@ -1,302 +1,437 @@
-.kota-hero {
+/* ========== Frbnl's STANDARDIZED CITY CSS/STYLE ========== */
+/* ========== MADE & FIRST APPLIED ON 07-11-2025 ========== */
+
+:root {
+  --warna-utama: rgb(7, 28, 83);
+  --warna-latar: #ffffff;
+  --warna-teks: #141414;
+  --warna-teks-balik: #ffffff;
+  --warna-mute: rgb(120, 120, 120);
+  --warna-judul: gold;
+}
+
+body {
+  margin: 0;
+  font-family: manrope, playfair;
+  color: var(--warna-teks);
+  background: var(--warna-latar);
+  line-height: 1.6;
+}
+/* ========== HERO SECTION ========== */
+.bagian-hero {
   position: relative;
   height: 80vh;
   overflow: hidden;
   text-align: center;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
-.kota-hero-media {
+
+.hero-media {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 1;
+  border-radius: 12px;
+  margin-top: -12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-.kota-hero-overlay {
+
+.hero-overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 60%);
+  inset: 0;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 60%);
 }
-.kota-hero-text {
-  position: relative;
-  z-index: 2;
-  color: var(--textrev);
-  text-shadow: 0 0 18px rgba(208, 208, 208, 0.5);
-  text-align: center;
-  bottom: 350px;
+
+.hero-teks {
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
-.kota-hero-text h1 {
-  font-size: 4.2rem;
-  margin-bottom: 10px;
+
+.hero-judul {
+  font-family: playfair;
+  font-size: 5rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  margin-bottom: 4%;
 }
-.page-title{
-  text-align: center;
-  margin-top: 21vh;
-  line-height: 0.05;
-}
-.page-title h3{
+
+.hero-subjudul {
   font-family: manrope;
-  color: var(--text-blue);
+  font-size: 1.1rem;
 }
-.title-bali{
-  font-size: 4.5em;
-  color: gold;
+
+/* ========== PAGE TITLE ========== */
+.judul-halaman {
   text-align: center;
+  margin-top: 19vh;
+  line-height: 20px;
 }
-.kota-intro {
-  padding: 100px 50px;
-  background: #fff;
-  text-align: left;
-  display: grid;
-  gap: 40px;
-  grid-template-columns: 1fr 1fr;
+
+.judul-halaman h3 {
+  color: var(--warna-utama);
+  font-family: manrope;
 }
-.kota-intro h2 {
-  font-family: Playfair;
-  text-shadow: 0 0 20px rgba(217, 224, 7, 0.3);
+
+.judul-destinasi {
   font-size: 4rem;
-  margin-bottom: 15px;
-  color: gold;
+  font-family: playfair;
+  color: var(--warna-judul);
+  position: relative;
 }
-.title-bali::before{
+.title-bali::before, .title-bali::after {
   content: "";
   position: absolute;
-  height: 4px;
-  width: 29%;
-  left: 280px;
-  background: rgb(1, 5, 107);
+  height: 3px;
+  width: 22%;
+  background: var(--warna-utama);
   border-radius: 2px;
-  transform: translate(-50%, 10px);
+  top: 100%;
 }
-.title-bali::after{
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: 29%;
-  right: -140px;
-  background: rgb(1, 5, 107);
-  border-radius: 2px;
-  transform: translate(-50%, 10px);
+.title-bali::before {
+  left: 13%;
 }
-.kota-intro p {
-  text-align: left;
+.title-bali::after {
+  right: 13%;
+}
+/* ========== INTRO SECTION ========== */
+.bagian-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 100px 10%;
+  align-items: center;
+}
+
+.intro-teks p {
   font-family: manrope;
-  color: var(--text);
-  line-height: 1.7;
-  max-width: 800px;
-  margin-top: 90px;
+  color: var(--warna-teks);
 }
-.kota-intro .sumber {
-  color: var(--mute);
-  font-family: manrope;
+
+.intro-sumber {
+  color: var(--warna-mute);
+  margin-top: 1rem;
+}
+
+.intro-sumber a {
+  color: var(--warna-mute);
   text-decoration: none;
 }
-.kota-intro .sumber a {
-  color: var(--mute);
-  font-family: manrope;
-  text-decoration: none;
+
+.intro-gambar img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
 }
-.kota-intro img{
-  width: 700px;
-  border-radius: 20px;
-}
-.kota-places {
-  padding: 80px 120px;
+
+/* ========== DESTINASI ========== */
+.bagian-destinasi {
   background: #f8f8f8;
+  padding: 80px 10%;
 }
-.kota-places h2 {
+
+.judul-bagian {
   text-align: center;
-  font-family: Playfair;
+  font-family: playfair;
   font-size: 3rem;
-  color: var(--text-blue);
+  color: var(--warna-utama);
   margin-bottom: 50px;
 }
 
-/*Must Visit*/
-.mustsee-grid {
+.grid-destinasi {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
-.spot {
+.kartu-destinasi {
   position: relative;
   overflow: hidden;
-  border-radius: 14px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.spot:hover {
-  transform: scale(1.02);
-}
-
-.spot img {
+.kartu-destinasi img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(80%);
-  transition: filter 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-.spot:hover img {
-  filter: brightness(65%);
+.kartu-destinasi:hover img {
+  transform: scale(1.05);
 }
 
-.spot h3 {
-  position: relative;
-  bottom: 12px;
-  left: 16px;
+.kartu-destinasi::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 60%);
+}
+
+.info-destinasi {
+  position: absolute;
+  bottom: 0;
   color: #fff;
-  font-size: 1.3rem;
-  font-weight: 700;
-  font-family: 'Manrope', sans-serif;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
-}
-.spot.big {
-  grid-row: span 2;
+  padding: 20px;
+  z-index: 2;
 }
 
-.spot.wide {
-  grid-column: span 2;
-}
-.place-section{
-  display: flex;
-  justify-content: space-evenly;
-}
-.reco-card{
-  position: relative;
-  border-radius: 16px;
-  width: 550px;
-}
-.spot h2{
-  position: absolute;
-  bottom: 65px;
-  left: 15px;
-  z-index: 5;
-  color: var(--textrev);
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
-}
-.spot h3{
-  position: absolute;
-  bottom: 180px;
-  left: 15px;
-  z-index: 5;
+.judul-tempat {
   font-family: playfair;
-  font-size: 2.5em;
-  color: var(--textrev);
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
 }
-.spot p{
-  z-index: 5;
-  position: absolute;
-  bottom: 1px;
 
-  margin-left: 15px;
-  color: var(--textrev);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 2);
+.teks-deskripsi {
+  font-family: manrope;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
-.overlay{
-  position: absolute;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  top: -2px; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 60%);
+
+.kartu-destinasi.besar { 
+  grid-row: span 2; 
 }
-.reco-card img{
-  width: 100%;
-  border-radius: 12px;
+.kartu-destinasi.lebar { 
+  grid-column: span 2; 
 }
-.kota-culture {
+
+/* ========== BUDAYA ========== */
+.bagian-budaya {
   display: flex;
   align-items: center;
-  gap: 60px;
-  padding: 80px 120px;
+  gap: 50px;
+  padding: 80px 10%;
   background: #fff;
 }
-.culture-p{
+
+.budaya-teks {
+  flex: 1;
+}
+
+.judul-budaya {
+  font-family: playfair;
+  font-size: 3.5rem;
+  color: var(--warna-utama);
+  margin-bottom: 20px;
+}
+
+.teks-budaya {
   font-family: manrope;
-  
+  color: var(--warna-teks);
+  line-height: 1.7;
 }
-.culture-text {
+
+.budaya-gambar {
   flex: 1;
 }
-.culture-text h2 {
-  font-family: Playfair;
-  font-size: 4.6em;
-  margin-bottom: 50px;
-  
-  color: var(--text-blue);
-}
-.culture-img {
-  flex: 1;
-}
-.culture-img img {
-  margin-top: 120px;
+
+.budaya-gambar img {
   width: 100%;
-  height: 500px;
-  object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-.transport-section {
+
+/* ========== TRANSPORTASI ========== */
+.bagian-transport {
   padding: 80px 10%;
   background: #fafafa;
   text-align: center;
 }
 
-.transport-section .section-title {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  font-family: 'Playfair', serif;
-}
-
-.transport-section .section-subtitle {
-  font-size: 1rem;
-  color: #666;
+.subjudul-bagian {
+  color: var(--warna-mute);
   margin-bottom: 40px;
 }
 
-.transport-grid {
+.grid-transport {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
-  justify-items: center;
 }
 
-.transport-card {
+.kartu-transport {
   background: white;
-  min-width: 400px;
   border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.transport-card:hover {
+.kartu-transport:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.transport-card img {
+.kartu-transport img {
   width: 100%;
   height: 220px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  margin: 0 0;
-  margin-bottom: 15px;
+  object-fit: cover;
 }
 
-.transport-card h3 {
-  margin-bottom: 10px;
+.kartu-transport h3 {
+  margin-top: 15px;
   font-size: 1.2rem;
-  color: var(--text);
+  color: var(--warna-teks);
 }
 
-.transport-card p {
+.kartu-transport p {
+  padding: 0 15px 20px 15px;
   font-size: 0.95rem;
+  color: var(--warna-mute);
+}
+/* ========== CAROUSEL ========== */
+.title-galeri {
+  text-align: center;
+  font-family: playfair;
+  font-size: 3rem;
+  color: var(--warna-utama);
+  margin: 60px 0 30px 0;
+} 
+.item img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: var(--warna-utama);
+  color: #fff;
   font-family: manrope;
-  color: var(--mute3);
-  line-height: 1.6;
-  padding: 15px;
+  margin-top: 60px;
+}
+
+/* ========== RESPONSIVE: TABLET & PHONE (<768px) ========== */
+@media (max-width: 768px) {
+
+  /* HERO SECTION */
+  .bagian-hero {
+    height: 60vh;
+  }
+  .hero-judul {
+    font-size: 2.4rem;
+  }
+  .hero-subjudul {
+    font-size: 0.95rem;
+    padding: 0 20px;
+  }
+
+  /* PAGE TITLE */
+  .judul-halaman {
+    margin-top: 10vh;
+    line-height: normal;
+  }
+  .judul-halaman h3 {
+    font-size: 1rem;
+  }
+  .judul-destinasi {
+    font-size: 2.8rem;
+  }
+
+  /* INTRO SECTION */
+  .bagian-intro {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 60px 8%;
+  }
+  .intro-teks {
+    order: 2;
+  }
+  .intro-gambar {
+    order: 1;
+  }
+  .intro-gambar img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* DESTINASI SECTION */
+  .bagian-destinasi {
+    padding: 60px 6%;
+  }
+  .judul-bagian {
+    font-size: 2.2rem;
+  }
+  .grid-destinasi {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .kartu-destinasi.lebar,
+  .kartu-destinasi.besar {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .judul-tempat {
+    font-size: 1.4rem;
+  }
+  .teks-deskripsi {
+    font-size: 0.9rem;
+  }
+
+  /* BUDAYA SECTION */
+  .bagian-budaya {
+    flex-direction: column;
+    padding: 60px 8%;
+    text-align: center;
+  }
+  .judul-budaya {
+    font-size: 2.4rem;
+  }
+  .teks-budaya {
+    text-align: justify;
+    font-size: 0.95rem;
+  }
+  .budaya-gambar img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  /* TRANSPORT SECTION */
+  .bagian-transport {
+    padding: 60px 6%;
+  }
+  .grid-transport {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .kartu-transport img {
+    height: 180px;
+  }
+  .judul-transport {
+    font-size: 1rem;
+  }
+  .kartu-transport p {
+    font-size: 0.9rem;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 0.9rem;
+    padding: 20px;
+  }
+}
+
+/* ========== RESPONSIVE: PHONE SMALLER (<480px) ========== */
+@media (max-width: 480px) {
+  .hero-judul {
+    font-size: 2rem;
+  }
+  .hero-subjudul {
+    font-size: 0.85rem;
+  }
+  .judul-destinasi {
+    font-size: 2.2rem;
+  }
+  .judul-bagian {
+    font-size: 1.8rem;
+  }
+  .judul-budaya {
+    font-size: 2rem;
+  }
 }

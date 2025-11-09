@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raja Ampat - Explore Indonesia</title>
-    <link rel="stylesheet" href="styles/style-base.css">
-    <link rel="stylesheet" href="styles/Raja-ampat.css">
-    <link rel="stylesheet" href="styles/jawa.css">
-    <script src="skrip.js" defer></script>
-    <script src="head.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raja Ampat - Template Wisata</title>
+  <link rel="stylesheet" href="styles/style-base.css" />
+  <link rel="stylesheet" href="styles/Raja-ampat.css" />
+  <link rel="stylesheet" href="styles/owl.carousel.min.css">
+  <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+  <script src="js/skrip.js" defer></script>
+  <script src="js/head.js" defer></script>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header class="header navbar" id="header">
     <div class="brand">
-       <a href="index.html"><img class="logo" id="logo" src="Medias/GoNusa_logo_white.png" alt="logo sman3"></a>
+      <a href="index.html"><img class="logo" id="logo" src="Medias/GoNusa_logo_white.png" alt="logo sman3"></a>
     </div>
-        
-        <nav>
+    <nav>
         <ul>
-            <li><a href="index.html" class="aktif" >Destinasi</a>
+            <li><a href="index.html" class="aktif" >Beranda</a>
             </li>
             <li>
-            <a href="sejarah.html">Acara</a>
+            <a href="Destinasi.html">Destinasi</a>
             </li>
             <li>
-            <a href="berita.html">Rencanakan Perjalanan</a>
+            <a href="Panduan.html">Panduan Perjalanan</a>
             </li>
-            <li><a href="kontak.html" class="kontak">Kontak</a></li>
+            <li><a href="kontak.html" class="kontak">Kontak & Profil</a></li>
+            <li><a href="https://www.traveloka.com/id-id?cur=IDR" class="kontak">Traveloka</a></li>
         </ul>
     </nav>
-
-    </header>
+  </header>
 
   <!-- HERO SECTION -->
-  <section class="kota-hero">
-    <img src="Medias/Raja Ampat banner.jpg" class="kota-hero-media">
-    <div class="kota-hero-overlay"></div>
-    <div class="kota-hero-text">
-      <h1>Raja Ampat</h1>
-      <p></p>
+  <section class="bagian-hero">
+    <img src="Medias/Raja Ampat banner.jpg" alt="Banner Raja Ampat" class="hero-media">
+    <div class="hero-overlay"></div>
+    <div class="hero-teks">
+      <h1 class="hero-judul">Raja Ampat</h1>
+      <p class="hero-subjudul">Surga bawah laut Indonesia yang menakjubkan di ujung Papua Barat.</p>
     </div>
   </section>
 
-  <div class="page-title">
-    <h3> Selamat Datang di</h3>
-    <h2 class="title-bali">Surga Bawah Laut Indonesia</h2>
+  <!-- JUDUL HALAMAN -->
+  <div class="judul-halaman">
+    <h3>Selamat Datang di</h3>
+    <h2 class="judul-destinasi">Surga Bawah Laut Indonesia</h2>
   </div>
 
-  <!-- kota INTRO -->
-  <section class="kota-intro">
-    <div>
-      
+  <!-- INTRO SECTION -->
+  <section class="bagian-intro">
+    <div class="intro-teks">
       <p>
         Terletak di ujung barat Papua, Raja Ampat dikenal sebagai surga tropis yang menyimpan keajaiban alam bawah laut paling memukau di dunia. Gugusan lebih dari 1.500 pulau kecil ini dikelilingi laut biru jernih, terumbu karang berwarna-warni, dan kehidupan laut yang luar biasa beragam — menjadikannya destinasi impian bagi para penyelam dan pecinta alam.
         <br><br>
@@ -59,41 +60,55 @@
         <br><br>
         Raja Ampat bukan sekadar destinasi wisata, tapi juga simbol keindahan alam Indonesia yang tak tersentuh. Di setiap hembusan angin laut dan riak ombaknya, ada ketenangan yang hanya bisa ditemukan di tempat seindah ini.
       </p>
-      <p class="sumber">selengkapnya: <a href="https://id.wikivoyage.org/wiki/Raja_Ampat"> https://id.wikivoyage.org/wiki/Raja_Ampat</a></p>
+      <p class="intro-sumber">Sumber: <a href="https://id.wikivoyage.org/wiki/Raja_Ampat">https://id.wikivoyage.org/wiki/Raja_Ampat</a></p>
     </div>
-    <img src="Medias/Piaynemo-Raja-Ampat-komodo-luxury-2.webp " alt="Raja Ampat Picture">
+    <div class="intro-gambar">
+      <img src="Medias/Piaynemo-Raja-Ampat-komodo-luxury-2.webp" alt="Raja Ampat Picture">
+    </div>
   </section>
 
-  <!-- MUST VISIT PLACES -->
-  <section class="kota-places">
-    <h2>Destinasi Unggulan Raja Ampat</h2>
-        <div class="mustsee-grid">
-        <div class="spot big">
-            <img src="Medias/wayag.jpg" alt="Wayag Raja Ampat">
-            <h3>Wayag</h3>
-            <p>Wayag adalah ikon Raja Ampat dengan gugusan pulau-pulau karst yang membentuk panorama spektakuler. Dari puncak bukit kapurnya, kamu bisa menyaksikan perpaduan warna laut biru toska yang tak ada duanya.</p>
-            <div class="overlay"></div>
+  <!-- DESTINASI UNGGULAN -->
+  <section class="bagian-destinasi">
+    <h2 class="judul-bagian">Destinasi Unggulan Raja Ampat</h2>
+
+    <div class="grid-destinasi">
+      <div class="kartu-destinasi besar">
+        <img src="Medias/wayag.jpg" alt="Wayag Raja Ampat">
+        <div class="info-destinasi">
+          <h3 class="judul-tempat">Wayag</h3>
+          <p class="teks-deskripsi">
+            Wayag adalah ikon Raja Ampat dengan gugusan pulau-pulau karst yang membentuk panorama spektakuler. Dari puncak bukit kapurnya, kamu bisa menyaksikan perpaduan warna laut biru toska yang tak ada duanya.
+          </p>
         </div>
-        <div class="spot wide">
-            <img src="Medias/piaynemo.jpg" alt="Piaynemo Raja Ampat">
-            <h2>Piaynemo</h2>
-            <p>Piaynemo sering disebut “Wayag mini” karena pemandangan alamnya yang serupa — tebing-tebing karst di tengah laut biru. Dari menara pandang di puncak bukit, kamu bisa menikmati panorama ikonik Raja Ampat yang memesona. Jalur menuju puncak memang menantang, tapi keindahan yang menanti di atas sungguh sepadan.</p>
-            <div class="overlay"></div>
+      </div>
+
+      <div class="kartu-destinasi lebar">
+        <img src="Medias/piaynemo.jpg" alt="Piaynemo Raja Ampat">
+        <div class="info-destinasi">
+          <h3 class="judul-tempat">Piaynemo</h3>
+          <p class="teks-deskripsi">
+            Piaynemo sering disebut “Wayag mini” karena pemandangan alamnya yang serupa — tebing-tebing karst di tengah laut biru. Dari menara pandang di puncak bukit, kamu bisa menikmati panorama ikonik Raja Ampat yang memesona. Jalur menuju puncak memang menantang, tapi keindahan yang menanti di atas sungguh sepadan.
+          </p>
         </div>
-        <div class="spot wide">
-            <img src="Medias/desa arborek.jpeg" alt="Desa Arborek">
-            <h2 class="spot-title">Desa Arborek</h2>
-            <p>Desa Arborek menawarkan pengalaman wisata budaya yang autentik. Dikenal sebagai desa wisata, penduduknya hidup berdampingan dengan alam sambil menjaga kelestarian laut. Kamu bisa snorkeling langsung dari dermaga dan melihat ribuan ikan kecil berenang di antara terumbu karang. Di sini, senyum ramah dan kehangatan warga menjadi bagian dari keindahan yang tak terlupakan.</p>
-            <div class="overlay"></div>
+      </div>
+
+      <div class="kartu-destinasi lebar">
+        <img src="Medias/desa arborek.jpeg" alt="Desa Arborek">
+        <div class="info-destinasi">
+          <h3 class="judul-tempat">Desa Arborek</h3>
+          <p class="teks-deskripsi">
+            Dikenal sebagai desa wisata, penduduknya hidup berdampingan dengan alam sambil menjaga kelestarian laut. Kamu bisa snorkeling langsung dari dermaga dan melihat ribuan ikan kecil berenang di antara terumbu karang. Di sini kehangatan warga menjadi bagian dari keindahan yang tak terlupakan.
+          </p>
         </div>
-        </div>
+      </div>
+    </div>
   </section>
 
-  <!--CULTURE -->
-  <section class="kota-culture">
-    <div class="culture-text">
-      <h2>Budaya yang Autentik</h2>
-      <p class="culture-p">
+  <!-- BAGIAN BUDAYA -->
+  <section class="bagian-budaya">
+    <div class="budaya-teks">
+      <h2 class="judul-budaya">Budaya yang Autentik</h2>
+      <p class="teks-budaya">
         Di balik keindahan alamnya, Raja Ampat juga menyimpan kekayaan budaya masyarakat Papua yang masih terjaga dengan baik. Kehidupan masyarakat lokal sangat erat dengan laut — mereka menggantungkan hidup pada hasil laut sekaligus menjaga keseimbangannya melalui tradisi turun-temurun.
         <br><br>
         Upacara adat seperti tarian selamat datang dan nyanyian tradisional sering digelar untuk menyambut tamu. Setiap gerakan dan irama mengandung makna spiritual tentang rasa syukur kepada alam dan leluhur. Warga Raja Ampat juga memiliki sistem sosial yang berlandaskan gotong royong dan rasa kebersamaan yang kuat.
@@ -101,49 +116,63 @@
         Bagi mereka, laut bukan hanya sumber penghidupan, tapi juga bagian dari identitas dan kehidupan spiritual. Di sinilah letak keunikan budaya Raja Ampat — sederhana namun penuh makna, hidup seirama dengan alam yang mereka cintai.
       </p>
     </div>
-    <div class="culture-img">
+    <div class="budaya-gambar">
       <img src="Medias/sasi.jpeg" alt="Budaya Raja Ampat - Sasi">
     </div>
   </section>
 
-  <section class="transport-section">
-    <h2 class="section-title">Cara Menuju ke Raja Ampat</h2>
-    <p class="section-subtitle">
-        Untuk mencapai Raja Ampat, kamu bisa menempuh perjalanan udara, laut, maupun kombinasi keduanya.
+  <!-- BAGIAN TRANSPORTASI -->
+  <section class="bagian-transport">
+    <h2 class="judul-bagian">Cara Menuju ke Raja Ampat</h2>
+    <p class="subjudul-bagian">
+      Untuk mencapai Raja Ampat, kamu bisa menempuh perjalanan udara, laut, maupun kombinasi keduanya.
     </p>
 
-    <div class="transport-grid">
-        <div class="transport-card">
+    <div class="grid-transport">
+      <div class="kartu-transport">
         <img src="Medias/Pesawat.webp" alt="Pesawat">
-        <h3>Melalui Udara</h3>
+        <h3 class="judul-transport">Melalui Udara</h3>
         <p>
-            Perjalanan menuju Raja Ampat biasanya dimulai dengan penerbangan menuju Sorong, Papua Barat Daya. Bandara Domine Eduard Osok di Sorong melayani penerbangan dari berbagai kota besar di Indonesia seperti Jakarta, Makassar, dan Manado. Dari Sorong, kamu dapat melanjutkan perjalanan menuju Waisai — ibu kota Kabupaten Raja Ampat — menggunakan kapal cepat dengan waktu tempuh sekitar dua jam.
+          Perjalanan menuju Raja Ampat biasanya dimulai dengan penerbangan menuju Sorong, Papua Barat Daya. Bandara Domine Eduard Osok di Sorong melayani penerbangan dari berbagai kota besar di Indonesia seperti Jakarta, Makassar, dan Manado. Dari Sorong, kamu dapat melanjutkan perjalanan menuju Waisai — ibu kota Kabupaten Raja Ampat — menggunakan kapal cepat dengan waktu tempuh sekitar dua jam.
         </p>
-        </div>
+      </div>
 
-        <div class="transport-card">
+      <div class="kartu-transport">
         <img src="Medias/Kapal lawd.webp" alt="Kapal Laut">
-        <h3>Dengan Kapal Laut</h3>
+        <h3 class="judul-transport">Dengan Kapal Laut</h3>
         <p>
-            Alternatif lainnya adalah menggunakan kapal laut dari beberapa kota besar di Indonesia Timur menuju Sorong. Dari pelabuhan Sorong, tersedia kapal cepat atau feri menuju Waisai yang beroperasi secara rutin setiap hari. Perjalanan laut ini menawarkan pemandangan gugusan pulau yang menakjubkan sepanjang rute.
+          Alternatif lainnya adalah menggunakan kapal laut dari beberapa kota besar di Indonesia Timur menuju Sorong. Dari pelabuhan Sorong, tersedia kapal cepat atau feri menuju Waisai yang beroperasi secara rutin setiap hari. Perjalanan laut ini menawarkan pemandangan gugusan pulau yang menakjubkan sepanjang rute.
         </p>
-        </div>
+      </div>
 
-        <div class="transport-card">
+      <div class="kartu-transport">
         <img src="Medias/kapal lokal.webp" alt="Perahu Lokal">
-        <h3>Perjalanan Antarpulau</h3>
+        <h3 class="judul-transport">Perjalanan Antarpulau</h3>
         <p>
-            Setelah tiba di Waisai, kamu dapat menjelajahi berbagai pulau di Raja Ampat menggunakan perahu motor atau kapal wisata. Banyak operator lokal yang menawarkan layanan tur ke destinasi populer seperti Wayag, Piaynemo, Arborek, dan Misool. Meskipun aksesnya menantang, setiap perjalanan akan terbayar dengan pemandangan alam yang tiada duanya.
+          Setelah tiba di Waisai, kamu dapat menjelajahi berbagai pulau di Raja Ampat menggunakan perahu motor atau kapal wisata. Banyak operator lokal yang menawarkan layanan tur ke destinasi populer seperti Wayag, Piaynemo, Arborek, dan Misool. Meskipun aksesnya menantang, setiap perjalanan akan terbayar dengan pemandangan alam yang tiada duanya.
         </p>
-        </div>
-        </div>
-    </section>
-
-
+      </div>
+    </div>
+  </section>
+  <h2 class="title-galeri">Galeri</h2>
+  <!-- GALERI -->
+  <!--Sumber: OWL CAROUSEL:https://owlcarousel2.github.io/OwlCarousel2/ -->
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="Medias/raja ampat01.webp" alt=""></div>
+      <div class="item"><img src="Medias/raja ampat05.webp" alt=""></div>
+      <div class="item"><img src="Medias/raja ampat03.webp" alt=""></div>
+      <div class="item"><img src="Medias/Raja Ampat banner.jpg" alt=""></div>
+      <div class="item"><img src="Medias/raja ampat04.webp" alt=""></div>
+      </div>
+      
+    <script src="js/jquery.min.lib.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
   <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 GoNusa — Discover Indonesia.</p>
   </footer>
 
+  
 </body>
 </html>

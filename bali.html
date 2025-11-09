@@ -6,9 +6,11 @@
     <title>Bali - Explore Indonesia</title>
     <link rel="stylesheet" href="styles/style-base.css">
     <link rel="stylesheet" href="styles/bali.css">
-    <link rel="stylesheet" href="styles/jawa.css">
-    <script src="skrip.js" defer></script>
-    <script src="head.js" defer></script>
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <script src="js/skrip.js" defer></script>
+    <script src="js/head.js" defer></script>
+
 </head>
 <body>
 
@@ -17,42 +19,41 @@
        <a href="index.html"><img class="logo" id="logo" src="Medias/GoNusa_logo_white.png" alt="logo sman3"></a>
     </div>
         
-        <nav>
-        <ul>
-            <li><a href="index.html" class="aktif" >Destinasi</a>
-            </li>
-            <li>
-            <a href="sejarah.html">Acara</a>
-            </li>
-            <li>
-            <a href="berita.html">Rencanakan Perjalanan</a>
-            </li>
-            <li><a href="kontak.html" class="kontak">Kontak</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="aktif" >Beranda</a>
+      </li>
+      <li>
+      <a href="Destinasi.html">Destinasi</a>
+      </li>
+      <li>
+      <a href="Panduan.html">Panduan Perjalanan</a>
+      </li>
+      <li><a href="kontak.html" class="kontak">Kontak & Profil</a></li>
+      <li><a href="https://www.traveloka.com/id-id?cur=IDR" class="kontak">Traveloka</a></li>
+    </ul>
+  </nav>
 
     </header>
 
   <!-- HERO SECTION -->
-  <section class="kota-hero">
-    <img src="Medias/bali-banner.webp" class="kota-hero-media">
-    </video>
-    <div class="kota-hero-overlay"></div>
-    <div class="kota-hero-text">
-      <h1>Bali</h1>
-      <p></p>
+  <section class="bagian-hero">
+    <img src="Medias/bali-banner.webp" class="hero-media">
+    <div class="hero-overlay"></div>
+    <div class="hero-teks">
+      <h1 class="hero-judul">Bali</h1>
+      <p class="hero-subjudul"></p>
     </div>
   </section>
 
-  <div class="page-title">
+  <div class="judul-halaman">
     <h3> Selamat Datang di</h3>
-    <h2 class="title-bali">Pulau Dewata</h2>
+    <h2 class="judul-destinasi title-bali">Pulau Dewata</h2>
   </div>
 
   <!-- kota INTRO -->
-  <section class="kota-intro">
-    <div>
-      
+  <section class="bagian-intro">
+    <div class="intro-teks">
       <p>
         Sebagai salah satu destinasi wisata paling terkenal di dunia, Bali dikenal sebagai pulau yang memadukan keindahan alam dengan kekayaan budaya yang mendalam. Dikenal sebagai Pulau Dewata, Bali menghadirkan suasana spiritual yang berpadu harmonis dengan keramahan penduduknya serta keindahan alam tropis yang menakjubkan.
 
@@ -60,41 +61,46 @@
 
         Lebih dari sekadar destinasi wisata, Bali adalah simbol keseimbangan antara manusia, alam, dan spiritualitas. Nilai Tri Hita Karana yang dipegang masyarakatnya — keharmonisan dengan Tuhan, sesama, dan lingkungan — menjadikan Bali bukan hanya indah dipandang, tapi juga damai dirasakan.
       </p>
-      <p class="sumber">selengkapnya: <a href="https://id.wikivoyage.org/wiki/Bali"> https://id.wikivoyage.org/wiki/Bali</a></p>
+      <p class="intro-sumber">selengkapnya: <a href="https://id.wikivoyage.org/wiki/Bali"> https://id.wikivoyage.org/wiki/Bali</a></p>
     </div>
-    <img src="Medias/photo.jpg" alt="Bali Picture">
+    <div class="intro-gambar">
+      <img src="Medias/photo.jpg" alt="Bali Picture">
+    </div>
   </section>
 
   <!-- MUST VISIT PLACES -->
-  <section class="kota-places">
-    <h2>Destinasi Unggulan Bali</h2>
-        <div class="mustsee-grid">
-        <div class="spot big">
+  <section class="bagian-destinasi">
+    <h2 class="judul-bagian">Destinasi Unggulan Bali</h2>
+        <div class="grid-destinasi">
+        <div class="kartu-destinasi besar">
             <img src="Medias/ubud2.jpg" alt="Ubud Bali">
-            <h3>Ubud</h3>
-            <p class="culture-p">Terletak di jantung Pulau Bali, Ubud dikenal sebagai pusat seni, budaya, dan ketenangan jiwa. Dikelilingi oleh sawah berundak yang hijau dan hutan tropis yang menyejukkan, Ubud menjadi tempat bagi mereka yang mencari kedamaian dan inspirasi. Dari galeri seni, yoga retreat, hingga pasar tradisional yang penuh warna, setiap sudut Ubud memancarkan nuansa autentik Bali yang menenangkan.</p>
-            <div class="overlay"></div>
+            <div class="info-destinasi">
+              <h3 class="judul-tempat">Ubud</h3>
+              <p class="teks-deskripsi">Terletak di jantung Pulau Bali, Ubud dikenal sebagai pusat seni, budaya, dan ketenangan jiwa. Dikelilingi oleh sawah berundak yang hijau dan hutan tropis yang menyejukkan, Ubud menjadi tempat bagi mereka yang mencari kedamaian dan inspirasi. Dari galeri seni, yoga retreat, hingga pasar tradisional yang penuh warna, setiap sudut Ubud memancarkan nuansa autentik Bali yang menenangkan.</p>
+            </div>
         </div>
-        <div class="spot wide">
+        <div class="kartu-destinasi lebar">
             <img src="Medias/Nusa Penida2.jpg" alt="Nusa Penida">
-            <h2>Nusa Penida</h2>
-            <p class="culture-p">Nusa Penida adalah pulau kecil di tenggara Bali yang menawarkan keindahan alam luar biasa dan suasana yang masih alami. Tebing-tebing tinggi, laut biru jernih, dan pantai tersembunyi seperti Kelingking dan Crystal Bay menjadikannya surga bagi pencinta petualangan dan fotografi. Meski aksesnya menantang, panorama yang disajikan Nusa Penida selalu sepadan dengan perjalanan menuju ke sana.</p>
-            <div class="overlay"></div>
+            <div class="info-destinasi">
+              <h3 class="judul-tempat">Nusa Penida</h3>
+              <p class="teks-deskripsi">Nusa Penida adalah pulau kecil di tenggara Bali yang menawarkan keindahan alam luar biasa dan suasana yang masih alami. Tebing-tebing tinggi, laut biru jernih, dan pantai tersembunyi seperti Kelingking dan Crystal Bay menjadikannya surga bagi pencinta petualangan dan fotografi. Meski aksesnya menantang, panorama yang disajikan Nusa Penida selalu sepadan dengan perjalanan menuju ke sana.</p>
+            </div>
         </div>
-        <div class="spot wide">
+        <div class="kartu-destinasi lebar">
             <img src="Medias/Tanah lot.jpg" alt="Pura Tanah Lot">
-            <h2>Tanah Lot</h2>
-            <p class="culture-p">Tanah Lot adalah salah satu ikon paling terkenal di Bali, dikenal dengan pura yang berdiri kokoh di atas batu karang di tepi laut. Saat matahari terbenam, siluet berpadu dengan langit jingga menciptakan pemandangan yang  memukau. Selain menjadi tempat suci umat Hindu, Tanah Lot juga menjadi simbol keharmonisan antara manusia dan alam. Suara deburan ombak yang menghantam karang dan udara laut yang segar menjadikannya tempat sempurna untuk menutup hari dengan ketenangan dan kekaguman.</p>
-            <div class="overlay"></div>
+            <div class="info-destinasi">
+              <h3 class="judul-tempat">Tanah Lot</h3>
+              <p class="teks-deskripsi">Tanah Lot adalah salah satu ikon paling terkenal di Bali, dikenal dengan pura yang berdiri kokoh di atas batu karang di tepi laut. Saat matahari terbenam, siluet berpadu dengan langit jingga menciptakan pemandangan yang  memukau. Selain menjadi tempat suci umat Hindu, Tanah Lot juga menjadi simbol keharmonisan antara manusia dan alam. Suara deburan ombak yang menghantam karang dan udara laut yang segar menjadikannya tempat sempurna untuk menutup hari dengan ketenangan dan kekaguman.</p>
+            </div>
         </div>
         </div>
   </section>
 
   <!--CULTURE -->
-  <section class="kota-culture">
-    <div class="culture-text">
-      <h2>Budaya yang Kaya</h2>
-      <p class="culture-p">
+  <section class="bagian-budaya">
+    <div class="budaya-teks">
+      <h2 class="judul-budaya">Budaya yang Kaya</h2>
+      <p class="teks-budaya">
         Budaya Bali adalah jiwa dari pulau ini — hidup, sakral, dan indah dalam setiap geraknya. Di setiap upacara, perayaan, hingga kegiatan sehari-hari, masyarakat Bali selalu menampilkan rasa syukur dan keharmonisan melalui seni dan tradisi.
         <br>
         Seni tari menjadi salah satu ekspresi budaya yang paling menonjol. Tarian seperti Tari Kecak, Legong, dan Barong bukan sekadar hiburan, tapi juga bagian dari ritual yang memiliki makna spiritual mendalam. Diiringi alunan gamelan yang khas, setiap gerakan penari menggambarkan kisah dari epos Ramayana dan Mahabharata, mencerminkan hubungan manusia dengan alam dan para dewa.
@@ -104,43 +110,55 @@
         Di balik keindahan itu semua, tersimpan nilai Tri Hita Karana — filosofi hidup masyarakat Bali yang menekankan keharmonisan antara manusia dengan Tuhan (parahyangan), sesama manusia (pawongan), dan lingkungan (palemahan). Nilai inilah yang membuat budaya Bali tidak hanya menarik untuk dilihat, tetapi juga dirasakan.
       </p>
     </div>
-    <div class="culture-img">
+    <div class="budaya-gambar">
       <img src="Medias/Kecak.jpeg" alt="Tari Kecak">
     </div>
   </section>
-  <section class="transport-section">
-    <h2 class="section-title">Cara Menuju ke Bali</h2>
-    <p class="section-subtitle">
+  <section class="bagian-transport">
+    <h2 class="judul-bagian">Cara Menuju ke Bali</h2>
+    <p class="subjudul-bagian">
         Terdapat banyak cara untuk mencapai Bali, baik melalui udara, darat, maupun Laut.
     </p>
 
-    <div class="transport-grid">
-        <div class="transport-card">
+    <div class="grid-transport">
+      <div class="kartu-transport">
         <img src="Medias/Pesawat.webp" alt="Pesawat">
-        <h3>Melalui Udara</h3>
+        <h3 class="judul-transport">Melalui Udara</h3>
         <p>
             Cara paling mudah menuju Bali adalah dengan pesawat terbang. Bandara Internasional I Gusti Ngurah Rai di Denpasar melayani penerbangan domestik dan internasional dari berbagai kota besar di Indonesia seperti Jakarta, Surabaya, Yogyakarta, dan Medan, serta dari luar negeri seperti Singapura, Kuala Lumpur, dan Sydney. Dari bandara, kamu dapat melanjutkan perjalanan ke berbagai wilayah Bali dengan taksi, ojek online, atau layanan shuttle.
         </p>
         </div>
 
-        <div class="transport-card">
+        <div class="kartu-transport">
         <img src="Medias/Kapal lawd.webp" alt="Kapal Laut">
-        <h3>Dengan Kapal Laut</h3>
+        <h3 class="judul-transport">Dengan Kapal Laut</h3>
         <p>
             Bagi yang ingin menikmati perjalanan dengan nuansa berbeda, kamu bisa mencapai Bali lewat jalur laut. Pelabuhan Gilimanuk di barat Bali menghubungkan pulau ini dengan Pelabuhan Ketapang di Banyuwangi, Jawa Timur. Sementara untuk perjalanan dari Lombok, tersedia kapal cepat (fast boat) dan feri dari Pelabuhan Padangbai atau Serangan
         </p>
         </div>
 
-        <div class="transport-card">
+        <div class="kartu-transport">
         <img src="Medias/road trip.png" alt="Kendaraan Pribadi">
-        <h3>Melalui Jalur Darat</h3>
+        <h3 class="judul-transport">Melalui Jalur Darat</h3>
         <p>
             Perjalanan darat menuju Bali juga bisa menjadi pengalaman seru. Dari Pulau Jawa, kamu dapat berkendara melalui jalur pantai utara (Pantura) atau jalur selatan hingga ke Banyuwangi, lalu menyeberang ke Bali melalui Pelabuhan Ketapang–Gilimanuk. Setelah tiba, jalan raya utama di Bali memudahkan akses menuju berbagai destinasi wisata di seluruh pulau.
         </p>
-        </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
+  <h2 class="title-galeri">Galeri</h2>
+  <!-- GALERI -->
+  <!--Sumber: OWL CAROUSEL:https://owlcarousel2.github.io/OwlCarousel2/ -->
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="Medias/Kecak.jpeg" alt=""></div>
+        <div class="item"><img src="Medias/bali-banner.webp" alt=""></div>
+        <div class="item"><img src="Medias/photo.jpg" alt=""></div>
+         <div class="item"><img src="Medias/ubud2.jpg" alt=""></div>
+    </div>
+    <script src="js/jquery.min.lib.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 
   <!-- FOOTER -->
   <footer>

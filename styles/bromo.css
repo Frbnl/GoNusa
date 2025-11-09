@@ -27,7 +27,7 @@
   bottom: 340px;
 }
 .kota-hero-text h1 {
-  font-size: 4.5rem;
+  font-size: 4.5em;
   font-family: 'Playfair', serif;
   color: #f8eac9;
   letter-spacing: 2px;
@@ -73,7 +73,6 @@
 /* === INTRO SECTION === */
 .kota-intro {
   padding: 100px 50px;
-  background: #f6f7fb;
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr 1fr;
@@ -102,7 +101,7 @@
 /* === MUST VISIT PLACES === */
 .kota-places {
   padding: 80px 120px;
-  background: #eef3f8;
+
 }
 .kota-places h2 {
   text-align: center;
@@ -175,7 +174,7 @@
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 60%);
 }
 
-/* === CULTURE / EXPERIENCE SECTION === */
+/* === CULTURE==== */
 .kota-culture {
   display: flex;
   align-items: center;
@@ -187,14 +186,14 @@
   flex: 1;
 }
 .culture-text h2 {
-  font-family: 'Playfair', serif;
+  font-family: Playfair;
   font-size: 4rem;
   margin-bottom: 40px;
-  color: #3e4b60;
+  color: var(--text-blue);
 }
 .culture-text p {
   color: #2b2b2b;
-  font-family: 'Manrope', sans-serif;
+  font-family: Manrope;
   line-height: 1.8;
 }
 .culture-img {
