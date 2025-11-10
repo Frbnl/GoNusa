@@ -1,0 +1,111 @@
+.judul-peta{
+  font: 400;
+  font-size: 56px;
+  color: var (--warna-teks);
+  font-family: playfair;
+}
+.judul-peta::before, .judul-peta::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 17%;
+  background: #1d2c44;
+  border-radius: 2px;
+  top: 109%;
+}
+.judul-peta::before {
+  left: 10%;
+}
+.judul-peta::after {
+  right: 10%;
+}
+.pulau-container{
+  bottom: 110px;
+  left: -1px;
+  position: absolute;
+  font-family: playfair;
+}
+.bagian-hero{
+  margin-bottom: 200px;
+}
+.spot{
+  max-height: 400px;
+}
+.mustsee-container h2{
+  font-size: 43px;
+  text-align: center;
+  color: var(--warna-utama);
+  font-family: playfair;
+  margin-bottom: 100px;
+}
+
+.item img{
+  max-height: 500px;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+.item h3{
+  position: absolute;
+  font-size: 30px;
+  bottom: 26px;
+  left: 60px;
+  color: var(--warna-teks-balik);
+  font-weight: 700;
+  font-family: Manrope;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  z-index: 3;
+}
+.item svg{
+  position: absolute;
+  bottom: 31px;
+  left: 58px;
+  z-index: 4;
+}
+.item p{
+  position: absolute;
+  bottom: 13px;
+  left: 84px;
+  color: rgb(183, 183, 183);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Manrope;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  z-index: 3;
+}
+.item::after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 400px;
+  border-radius: 12px;
+  height: 30%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  backdrop-filter: blur(1px);
+  z-index: 2;
+}
+button{
+  margin-top: 50px;
+  text-align: center;
+  margin-left: 40px;
+  border-radius: 12px;
+  border: 1px solid black;
+  background: none;
+  font-family: manrope;
+  color: black;
+  font-weight: bold;
+  align-self: center;
+  padding: 15px;
+  transition: 0.5s;
+  padding-right: 53px;
+  font-size: 20px;
+}
+button:hover{
+  color: white;
+  background: rgb(80, 80, 255);
+}
+.traveloka svg{
+  position: absolute;
+  width: 50px;
+  top: 3240px;
+  z-index: 5;
+}

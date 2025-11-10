@@ -1,11 +1,14 @@
-body{
-  overflow-x: hidden;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .wil-hero {
   position: relative;
   height: 70vh;
   overflow: hidden;
-  margin-bottom: 180px;
+  margin-bottom: 200px;
 }
 
 .gambar-wil{
@@ -63,11 +66,11 @@ body{
 }
 .map-container{
     position: absolute;
-    top: 530px;
+    top: 1200px;
     justify-content: center;
     align-items: center;
     background: transparent;
-    right: 380px;
+    right: 660px;
 }
 
 .svg-map{
@@ -204,5 +207,3 @@ body{
 .spot.wide {
   grid-column: span 2;
 }
-
-/*pointer-events="none" class="svg-java" width="715" height="240" viewBox="60 130 715 240" ><g><path class="leaflet-interactive" stroke="#A9C1DE" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#CEE4FF" fill-opacity="0.9" fill-rule="evenodd"*/

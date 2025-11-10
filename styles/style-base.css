@@ -202,16 +202,16 @@ nav ul li a.aktip {
 .video-container .video-slide img{
   position: absolute;
   width: 100%;
-    height: 100%;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 .overlay {
-    position: relative;
-    z-index: 2;
-    color: #ffffff;
-    text-align: center;
-    top: 40%;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-align: center;
+  top: 40%;
 }
 
 .controls {
@@ -549,6 +549,7 @@ main .welcome h1::after{
   color: #ddd;
 }
 .mustsee-container {
+
   margin: 100px 50px;
   padding: 50px 60px;
 }
@@ -582,6 +583,7 @@ main .welcome h1::after{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  max-height:100
 }
 
 .spot {
@@ -603,7 +605,9 @@ main .welcome h1::after{
   filter: brightness(80%);
   transition: filter 0.3s ease;
 }
-
+.normal{
+  max-height: 400px
+}
 .spot:hover img {
   filter: brightness(65%);
 }

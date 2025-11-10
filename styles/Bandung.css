@@ -235,11 +235,3 @@
   from {opacity: .4}
   to {opacity: 1}
 }
-footer {
-  background: #222;
-  color: #dddd;
-  font-family: manrope;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-}
